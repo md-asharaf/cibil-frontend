@@ -6,12 +6,12 @@ export default function HeroSection() {
     return (
         <section className="relative w-full overflow-hidden bg-background min-h-[60vh]">
 
-            <div className="relative md:mx-20 px-4 sm:px-6 lg:px-8 py-12 md:py-20 h-full">
+            <div className="relative  px-4 sm:px-6 lg:px-8 py-12 md:py-20 h-full">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center h-full">
                     {/* Left Content */}
-                    <div className="flex flex-col justify-center flex-1 w-full">
+                    <div className="flex flex-col justify-center flex-1 w-full text-center sm:text-left">
                         {/* Heading */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold text-blue-600 leading-tight mb-6">
+                        <h1 className="text-4xl sm:text-5xl  lg:text-8xl font-bold text-primary leading-tight mb-6">
                             Your credit <br className="hidden sm:block" /> your identity
                         </h1>
 
@@ -21,23 +21,23 @@ export default function HeroSection() {
                         </p>
 
                         {/* Buttons */}
-                        <div className="flex flex-wrap gap-4">
-                            <button className="px-6 py-3 rounded bg-blue-100 text-blue-600 font-medium hover:bg-blue-200 transition">
+                        <div className="flex flex-col  sm:flex-row gap-4">
+                            <button className="px-6 py-3 rounded bg-accent text-primary font-medium hover:bg-accent transition">
                                 Learn More
                             </button>
-                            <button className="px-6 py-3 rounded bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+                            <button className="px-6 py-3 rounded bg-primary text-primary-foreground font-medium hover:bg-primary/80 transition">
                                 Get Started
                             </button>
                         </div>
                     </div>
 
                     <div className="flex flex-col justify-center items-center flex-1 w-full ">
-                        <div className="relative w-full max-w-2xl left-0 aspect-4/3">
+                        <div className="relative w-full max-w-2xl left-0 aspect-4/3 h-full md:mr-90 mr-40">
                             <Image
                                 src="/51a86e8db5c6159cad151b173937b5776ab5b3e4.png"
                                 alt="ss"
                                 fill
-                                className="rounded-2xl object-cover"
+                                className="rounded-2xl object-cover "
                             />
                         </div>
 
